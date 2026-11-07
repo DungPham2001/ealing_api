@@ -1,0 +1,5 @@
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
+  "regions": ["iad1"],
+  "crons": [{ "path": "/v1/jobs/daily", "schedule": "0 9 * * *" }]
+}

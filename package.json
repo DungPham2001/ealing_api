@@ -1,0 +1,31 @@
+{
+  "name": "ealing-holdings-api",
+  "version": "1.0.0",
+  "description": "REST API for the Ealing Holdings Flutter app (entities, real estate, operations, development, finance, work queue, reports)",
+  "main": "src/server.js",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node scripts/db-init.js",
+    "setting": "node scripts/set-setting.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js",
+    "content": "node scripts/set-content.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.5.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^9.5.0",
+    "supertest": "^7.0.0"
+  }
+}
