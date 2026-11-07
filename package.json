@@ -13,7 +13,8 @@
     "db:init": "node scripts/db-init.js",
     "setting": "node scripts/set-setting.js",
     "test": "node --test --test-concurrency=1 test/*.test.js",
-    "content": "node scripts/set-content.js"
+    "content": "node scripts/set-content.js",
+    "seed:sample": "node scripts/seed-sample.js"
   },
   "dependencies": {
     "compression": "^1.7.4",
